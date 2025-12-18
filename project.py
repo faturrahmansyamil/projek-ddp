@@ -120,7 +120,7 @@ data_buah = get_fruit_data()
 st.set_page_config(page_title="Info Buah", page_icon="🍎", layout="wide")
 
 # Sidebar untuk navigasi
-st.sidebar.title("🍉 Navigasi")
+st.sidebar.title(" beranda aplikasi cek data dalam kandungan buah ")
 page = st.sidebar.radio(
     "Pilih Halaman:",
     ["Halaman 1: Mineral", "Halaman 2: Khasiat", "Halaman 3: Vitamin", "Halaman 4: Kandungan Gula"]
@@ -128,11 +128,11 @@ page = st.sidebar.radio(
 
 # Informasi jumlah buah
 st.sidebar.markdown("---")
-st.sidebar.info(f"📊 Total buah tersedia: **{len(data_buah)}** buah")
+st.sidebar.info(f"📊 Total buah tersedia : **{len(data_buah)}** buah")
 
 # HALAMAN 1: MINERAL
 if page == "Halaman 1: Mineral":
-    st.title("🍎 Informasi Mineral Buah")
+    st.title(" Informasi Mineral Buah")
     st.write("Masukkan nama buah untuk mengetahui kandungan mineralnya")
     
     nama_buah = st.text_input("Nama Buah:", key="mineral_input")
